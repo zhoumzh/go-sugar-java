@@ -9,7 +9,7 @@ import (
 提供各种转换操作
 */
 
-func int2str(arry []int) []string {
+func Int2str(arry []int) []string {
 	strArray := make([]string, len(arry))
 	for i, _ := range arry {
 		strArray[i] = strconv.Itoa(arry[i])
@@ -17,7 +17,7 @@ func int2str(arry []int) []string {
 	return strArray
 }
 
-func str2int(arry []string) []int {
+func Str2int(arry []string) []int {
 	intArray := make([]int, len(arry))
 	for i, _ := range arry {
 		ai, err := strconv.Atoi(arry[i])
@@ -29,10 +29,10 @@ func str2int(arry []string) []int {
 	return intArray
 }
 
-func intJoinStrDot(array []int) string {
-	return intJoinStr(array, ",")
+func IntJoinStrDot(array []int) string {
+	return IntJoinStr(array, ",")
 }
 
-func intJoinStr(arry []int, delimiter string) string {
-	return strings.Join(int2str(arry), delimiter)
+func IntJoinStr(arry []int, delimiter string) string {
+	return strings.Join(Int2str(arry), delimiter)
 }
