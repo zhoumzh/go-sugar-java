@@ -1,3 +1,3 @@
-module github.com/zhoumzh/gotools
+module github.com/zhoumzh/go-sugar-java
 
 go 1.18
