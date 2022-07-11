@@ -6,7 +6,7 @@ import (
 )
 
 /**
-提供各种转换操作
+提供各种数组操作
 */
 
 func Int2Str(array32 []int) []string {
